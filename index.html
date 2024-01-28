@@ -9,79 +9,81 @@
     <link rel="stylesheet" href="./main.css">
     <script src="https://kit.fontawesome.com/06c31878b8.js" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
-    <title>Arcsec</title>
+    <title>Ohmfield</title>
 </head>
 
 <body>
     <div id="main" class="container">
         <!--HEADER-->
-        <div class="">
-            <!--NAV-->
-            <div id="nav" class="col-md-12">
-                <div id="title" class="col-md-4">
-                    <img src="./resources/New Logo.jpeg" />
-                </div>
-                <div id="burger">
-                    <!-- <i class="fas fa-bars"></i> -->
-                    <ul>
-                        <li><button onclick="toggleModalAbout()">ABOUT</button></li>
-                        <li><button onclick="toggleModalEmail()">EMAIL</button></li>
-                        <li><button onclick="toggleModalMusic()">MUSIC</button></li>
-                    </ul>
-                </div>
+        <div class="central-list">
+            <div id="logo" class="col-md-12">
+                <img style="max-width: 300px; max-height: 150px;" class="mx-auto d-block" src="resources/New Logo.jpeg"
+                    alt="ohmfield-logo">
             </div>
         </div>
-        <!--MAIN Hero-->
-        <div id="hero" class="row">
-            <div class="col-md-12">
-                <video autoPlay loop muted src="./resources/Web bg 2.mp4" />
+        <!-- EMAIL -->
+        <div id="mc_embed_shell">
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+                #mc_embed_signup {
+                    background: #0a0909;
+                    color: white;
+                    clear: left;
+                    font: 14px Helvetica, Arial, sans-serif;
+                    width: 600px;
+
+                    input {
+                        color: black
+                    }
+                }
+
+
+
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <div id="mc_embed_signup">
+                <form
+                    action="https://ohmfield.us18.list-manage.com/subscribe/post?u=5ecdb9ab5d01019296271639b&amp;id=5af0739436&amp;f_id=00a715e7f0"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_self" novalidate="">
+                    <div id="mc_embed_signup_scroll">
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
+                                    class="asterisk">*</span></label><input type="email" name="EMAIL"
+                                class="required email" id="mce-EMAIL" required="" value=""></div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                        </div>
+                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                            /* real people should not fill this in and expect good things - do not remove this or risk
+                            form bot
+                            signups */
+                            <input type="text" name="b_5ecdb9ab5d01019296271639b_5af0739436" tabindex="-1" value="">
+                        </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
+                                    value="Subscribe">
+                                <p style="margin: 0px auto;"><a href="http://eepurl.com/h4aJZX"
+                                        title="Mailchimp - email marketing made easy and fun"><span
+                                            style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
+                                                class="refferal_badge"
+                                                src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                                                alt="Intuit Mailchimp"
+                                                style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <div id="parent-modal-about">
-            <div id="modal-about">
-                <div class="button">
-                    <button onclick="toggleModalAbout()">x</button>
-                </div>
-                <div class="title">
-                    <h2>about</h2>
-                </div>
-                <div class="para"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cum incidunt corrupti quidem
-                    eos sunt dolorum eligendi, quas aliquid veritatis perferendis ea amet? Quos hic iure sunt enim fuga
-                    accusantium.</p>
-            </div>
-        </div>
+
+
     </div>
-    <div id="parent-modal-email">
-        <div id="modal-email">
-            <div class="button">
-                <button onclick="toggleModalEmail()">x</button>
-            </div>
-            <div class="title">
-                <h2>email</h2>
-            </div>
-            <div class="para">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cum incidunt corrupti quidem
-                    eos sunt dolorum eligendi, quas aliquid veritatis perferendis ea amet? Quos hic iure sunt enim fuga
-                    accusantium.</p>
-            </div>
-        </div>
-    </div>
-    <div id="parent-modal-music">
-        <div id="modal-music">
-            <div class="button">
-                <button onclick="toggleModalMusic()">x</button>
-            </div>
-            <div class="title">
-                <h2>music</h2>
-            </div>
-            <div class="para">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cum incidunt corrupti quidem
-                    eos sunt dolorum eligendi, quas aliquid veritatis perferendis ea amet? Quos hic iure sunt enim fuga
-                    accusantium.</p>
-            </div>
-        </div>
-    </div>
+
     <!--SOCIALS-->
     <div id="footer" class="row">
         <div class="col-md-12">
