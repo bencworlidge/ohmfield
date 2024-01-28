@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/06c31878b8.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    <title>Arcsec</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <!--HEADER-->
+        <div class="">
+            <!--NAV-->
+            <div id="nav" class="col-md-12">
+                <div id="title" class="col-md-4">
+                    <img src="./resources/New Logo.jpeg" />
+                </div>
+                <div id="burger">
+                    <!-- <i class="fas fa-bars"></i> -->
+                    <ul>
+                        <li><button onclick="toggleModalAbout()">ABOUT</button></li>
+                        <li><button onclick="toggleModalEmail()">EMAIL</button></li>
+                        <li><button onclick="toggleModalMusic()">MUSIC</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--MAIN Hero-->
+        <div id="hero" class="row">
+            <div class="col-md-12">
+                <video autoPlay loop muted src="./resources/Web bg 2.mp4" />
+            </div>
+        </div>
+        <div id="parent-modal-about">
+            <div id="modal-about">
+                <div class="button">
+                    <button onclick="toggleModalAbout()">x</button>
+                </div>
+                <div class="title">
+                    <h2>about</h2>
+                </div>
+                <div class="para"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cum incidunt corrupti quidem
+                    eos sunt dolorum eligendi, quas aliquid veritatis perferendis ea amet? Quos hic iure sunt enim fuga
+                    accusantium.</p>
+            </div>
+        </div>
+    </div>
+    <div id="parent-modal-email">
+        <div id="modal-email">
+            <div class="button">
+                <button onclick="toggleModalEmail()">x</button>
+            </div>
+            <div class="title">
+                <h2>email</h2>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cum incidunt corrupti quidem
+                    eos sunt dolorum eligendi, quas aliquid veritatis perferendis ea amet? Quos hic iure sunt enim fuga
+                    accusantium.</p>
+            </div>
+        </div>
+    </div>
+    <div id="parent-modal-music">
+        <div id="modal-music">
+            <div class="button">
+                <button onclick="toggleModalMusic()">x</button>
+            </div>
+            <div class="title">
+                <h2>music</h2>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cum incidunt corrupti quidem
+                    eos sunt dolorum eligendi, quas aliquid veritatis perferendis ea amet? Quos hic iure sunt enim fuga
+                    accusantium.</p>
+            </div>
+        </div>
+    </div>
+    <!--SOCIALS-->
+    <div id="footer" class="row">
+        <div class="col-md-12">
+            <ul>
+                <li><i class="fab fa-spotify"></i></li>
+                <li><i class="fab fa-apple"></i></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter-square"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-tiktok"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
